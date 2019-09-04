@@ -63,8 +63,51 @@
 # Range
 ################################################
 
-even = list(range(0, 10, 2))
-odd = list(range(1, 10, 2))
+# even = list(range(0, 10, 2))
+# odd = list(range(1, 10, 2))
+#
+# print(even)
+# print(odd[2])
 
-print(even)
-print(odd)
+# print(range(0, 5, 2) == range(0, 6, 2))
+# print(list(range(0, 5, 2)))
+# print(list(range(0, 6, 2)))
+
+# r = range(0, 100)
+#
+# for i in r[::-2]:
+#     print(i)
+
+################################################
+# Challenge
+################################################
+
+# o = range(0, 100, 4)
+# print(o)
+# p = o[::5]
+# print(p)
+# for i in p:
+#     print(i)
+
+################################################
+# Tuples
+################################################
+
+# unpacking the tuple
+# values = ("1", "2", "3")
+# a, b, c = values
+# print(a)
+# print(b)
+# print(c)
+
+# imelda = "More Mayhem", "Imelda May", 2011, (
+#     (1, "Pulling the Rug"), (2, "Psycho"), (3, "Mayhem"), (4, "Kentish Town Waltz"))
+#
+# print(imelda)
+# title, artist, year, tracks = imelda
+# print(title)
+# print(artist)
+# print(year)
+# for songs in tracks:
+#     track_number, title = songs
+#     print("\tTrack Number: {}, Title: {}".format(track_number, title))
