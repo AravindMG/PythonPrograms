@@ -1,11 +1,24 @@
+# def name():
+#     user_input = input("Please enter your name: ")
+#     return user_input
+#
+#
+# def greet():
+#     print("Hello " + name() + ". Good Noon!")
+#
+#
+# if __name__ == "__main__":
+#     greet()
+
 def main():
-    num_int = 123
-    num_str = "456"
+    # Program to filter out only the even items from a list
 
-    print("Data type of num_int:", type(num_int))
-    print("Data type of num_str:", type(num_str))
+    my_list = [1, 5, 4, 6, 8, 11, 3, 12]
 
-    print(num_int + int(num_str))
+    new_list = list(map(lambda x: (x * 2), my_list))
+
+    # Output: [4, 6, 8, 12]
+    print(new_list)
 
 
 if __name__ == "__main__":
