@@ -1,25 +1,25 @@
-# def name():
-#     user_input = input("Please enter your name: ")
-#     return user_input
-#
-#
-# def greet():
-#     print("Hello " + name() + ". Good Noon!")
-#
-#
-# if __name__ == "__main__":
-#     greet()
+# fibonacci series with lru_cache
 
-def main():
-    # Program to filter out only the even items from a list
 
-    my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+from functools import lru_cache
 
-    new_list = list(map(lambda x: (x * 2), my_list))
 
-    # Output: [4, 6, 8, 12]
-    print(new_list)
+@lru_cache(maxsize=1000)
+def fibonacci(n):
+    # check whether the given number is a positive integer
+    if type(n) != int:
+        raise TypeError("Please specify a positive integer")
+    if n < 1:
+        raise ValueError("Please specify a positive integer")
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    elif n > 2:
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
 
 if __name__ == "__main__":
-    main()
+    for n in range(1, 101):
+        print(n, ":", fibonacci(n))
+
