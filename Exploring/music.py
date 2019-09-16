@@ -22,11 +22,11 @@ def nextmusic():
     pygame.mixer.music.load(Havanna)
     pygame.mixer.music.play()
     while pygame.mixer.music.get_busy():
-        print("Playing...")
+        print("Playing..")
         clock.tick(250)
     pygame.mixer.music.stop()
 
 
 if __name__ == "__main__":
-    pmusic()
     nextmusic()
+    pmusic()
